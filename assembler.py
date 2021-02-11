@@ -28,11 +28,6 @@ if(len(sys.argv) == 1):
 else:
     inp = open(sys.argv[1], "r")
 
-if not os.path.isfile("mips_inst.data"):
-    oo = open("mips_inst.data", "x")
-else:
-    oo = open("mips_inst.data", "w")
-
 for inst in inp.readlines():
     inst = inst.replace("\n","")
     tinst = inst
@@ -74,9 +69,4 @@ for inst in inp.readlines():
         print("Error in assembeling this command : ", end="")
         ans = tinst
 
-    print(tinst, "->", ans)
-    oo.write(ans)
-    oo.write("\n")
-oo.close()
-
-print("Completed Successfully!")
+    print(ans)
