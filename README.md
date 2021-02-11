@@ -1,16 +1,16 @@
 # MIPS-ASSEMBLER
 
-This Assembler converts MIPS instructions to binary format. It can be used in computer architucture projects.
-Script used instruction signatures from https://opencores.org/projects/plasma/opcodes. 
+This Assembler converts MIPS instructions to binary format. It can be used in computer architucture projects. <br>
+Script used instruction signatures from https://opencores.org/projects/plasma/opcodes. <br>
 You can add new instruction signature to MIPSInstructions.txt according to format.
 
-Script takes one argument for address of instructions file. Then prints binary code of each instruction
+Script takes one argument for address of instructions file. Then prints binary code of each instruction 
 
-It is implemented by python and go. Code is very very dirty becuase of tight deadline.
+It is implemented by python and go. Code is very very dirty becuase of tight deadline. <br>
 It was originally my arbitrary project for computer workshop lesson.
 
 # Running
-Go: go run assembler.go PATH_TO_INSTRUCTION_FILE
+Go: go run assembler.go PATH_TO_INSTRUCTION_FILE <br>
 Python: python3 assembler.py PATH_TO_INSTRUCTION_FILE
 
 # Testing
