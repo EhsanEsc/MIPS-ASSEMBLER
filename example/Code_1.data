@@ -1,0 +1,15 @@
+ADDI r2,r0,10
+ADDI r16,r0,0
+ADDI r1,r0,0
+ADDI r4,r0,0
+BEQ r1,r2,8
+nop
+LW r8,r4(1000)
+ADD r16,r16,r8
+ADDI r1,r1,1
+ADDI r4,r4,4
+nop
+nop
+nop
+J 4
+SW r16,r0(2000)

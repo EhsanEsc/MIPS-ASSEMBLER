@@ -1,0 +1,21 @@
+ADDI r2,r0,20
+nop
+nop
+nop
+BEQ r1,r2,13
+nop
+LW r8,r4(1000)
+SLT r3,r16,r8
+nop
+nop
+nop
+BEQ r3,r0,3
+nop
+nop
+ADDI r16,r8,0
+ADDI r17,r1,0
+ADDI r1,r1,1
+ADDI r4,r4,4
+J 1
+SW r16,r0(2000)
+SW r17,r0(2004)
